@@ -16,7 +16,9 @@ const Stack = createNativeStackNavigator();
 export default function App() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            {/* `id` is typed as required by React Navigation v7 when no explicit generic is provided;
+                passing `undefined` matches the intended behaviour of an anonymous navigator. */}
+            <Stack.Navigator id={undefined}>
                 <Stack.Screen
                     name="Home"
                     component={HomeScreen}
