@@ -93,9 +93,10 @@ class DelayedInMemoryProvider extends InMemoryProvider {
     }
 
     // artificially delay our init (delaying PROVIDER_READY event)
-    async initialize(context?: EvaluationContext | undefined): Promise<void> {
+    async initialize(_context?: EvaluationContext | undefined): Promise<void> {
         await new Promise((resolve) => setTimeout(resolve, this.delay));
-        return super.initialize(context);
+        // Newer @openfeature/web-sdk releases no longer expose `initialize` on InMemoryProvider's
+        // public API; the SDK treats missing initialize as implicitly ready, so nothing more to do.
     }
 }
 
