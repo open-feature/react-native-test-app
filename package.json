@@ -29,5 +29,8 @@
     "babel-preset-expo": "~55.0.18",
     "typescript": "~5.9.3"
   },
-  "private": true
+  "private": true,
+  "overrides": {
+    "postcss": "8.5.14"
+  }
 }
