@@ -24,7 +24,7 @@
     "react-native-screens": "~4.23.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
+    "@babel/core": "^7.29.6",
     "@types/react": "^19.2.14",
     "babel-preset-expo": "~55.0.18",
     "typescript": "~5.9.3"
@@ -32,6 +32,7 @@
   "private": true,
   "overrides": {
     "postcss": "8.5.14",
+    "shell-quote": "^1.8.4",
     "xcode": {
       "uuid": ">=11.1.1"
     }
