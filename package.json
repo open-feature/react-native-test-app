@@ -32,9 +32,20 @@
   "private": true,
   "overrides": {
     "postcss": "8.5.14",
-    "shell-quote": "^1.8.4",
+    "shell-quote": "^1.9.0",
     "xcode": {
       "uuid": ">=11.1.1"
+    },
+    "@istanbuljs/load-nyc-config": {
+      "js-yaml": "^3.15.0"
+    },
+    "@expo/xcpretty": {
+      "js-yaml": "^4.2.0"
+    },
+    "@expo/fingerprint": {
+      "minimatch": {
+        "brace-expansion": "^5.0.7"
+      }
     }
   }
 }
